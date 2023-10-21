@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="391.0" prefWidth="887.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainScreen">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="6.0" layoutY="48.0" prefHeight="296.0" prefWidth="874.0" spacing="20.0">
+         <children>
+            <Pane maxHeight="231.0" maxWidth="390.0" prefHeight="231.0" prefWidth="390.0">
+               <children>
+                  <TableView fx:id="partTableView" layoutX="6.0" layoutY="54.0" prefHeight="121.0" prefWidth="378.0">
+                    <columns>
+                      <TableColumn fx:id="partIDCol" prefWidth="75.0" text="Part ID" />
+                      <TableColumn fx:id="partNameCol" prefWidth="75.0" text="Part Name" />
+                        <TableColumn fx:id="inventoryCol" prefWidth="118.40003967285156" text="Inventory Level" />
+                        <TableColumn fx:id="priceCol" prefWidth="151.199951171875" text="Price/ Cost per Unit" />
+                    </columns>
+                  </TableView>
+                  <ButtonBar layoutX="102.0" layoutY="191.0" prefHeight="40.0" prefWidth="263.0">
+                    <buttons>
+                      <Button mnemonicParsing="false" onAction="#onActionAddPart" text="Add" />
+                        <Button mnemonicParsing="false" onAction="#onActionModifyPart" text="Modify" />
+                        <Button mnemonicParsing="false" onAction="#onActionDeletePart" text="Delete" />
+                    </buttons>
+                  </ButtonBar>
+                  <HBox alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="350.0" spacing="50.0">
+                     <children>
+                        <Label text="Parts">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="partIDTxt" onAction="#onActionSearchPart" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <Pane maxHeight="231.0" maxWidth="390.0" prefHeight="231.0" prefWidth="390.0">
+               <children>
+                  <TableView fx:id="productTableView" layoutX="6.0" layoutY="54.0" prefHeight="121.0" prefWidth="378.0">
+                     <columns>
+                        <TableColumn fx:id="productIDCol" prefWidth="75.0" text="Product ID" />
+                        <TableColumn fx:id="productNameCol" prefWidth="75.0" text="Product Name" />
+                        <TableColumn fx:id="prodInventoryCol" prefWidth="118.40003967285156" text="Inventory Level" />
+                        <TableColumn fx:id="productPriceCol" prefWidth="151.199951171875" text="Price/ Cost per Unit" />
+                     </columns>
+                  </TableView>
+                  <ButtonBar layoutX="102.0" layoutY="191.0" prefHeight="40.0" prefWidth="263.0">
+                     <buttons>
+                        <Button mnemonicParsing="false" onAction="#onActionAddProduct" text="Add" />
+                        <Button mnemonicParsing="false" onAction="#onActionModifyProduct" text="Modify" />
+                        <Button mnemonicParsing="false" onAction="#onActionDeleteProduct" text="Delete" />
+                     </buttons>
+                  </ButtonBar>
+                  <HBox alignment="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="40.0" prefWidth="350.0" spacing="50.0">
+                     <children>
+                        <Label text="Products">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <TextField fx:id="productIDTxt" onAction="#onActionSearchProduct" />
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <Label alignment="CENTER" prefHeight="48.0" prefWidth="350.0" text="Inventory Management System">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <Button layoutX="749.0" layoutY="344.0" mnemonicParsing="false" onAction="#onActionExitInventory" prefHeight="26.0" prefWidth="53.0" text="Exit" />
+   </children>
+</AnchorPane>
