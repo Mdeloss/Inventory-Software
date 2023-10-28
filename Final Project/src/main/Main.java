@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import model.*;
 
 /** This class instantiates the beginning screen of an application that displays inventory.
- * JavaDoc files are located at C:\Users\MDELOSS\Desktop\Java Project\Final Project\javadoc
+ * JavaDoc files are located at "Mdeloss\Inventory-Software\Final Project\javadoc"
  *<p>FUTURE ENHANCEMENT </p>
  *<p>Main class: I would add a welcome message and an option to begin a search with parts or products.</p>
  * <p>AddPart and ModifyPart class: I would show In-House and Outsource text fields simultaneously,
